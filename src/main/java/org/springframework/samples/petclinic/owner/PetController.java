@@ -74,7 +74,7 @@ class PetController {
 	}
 
 	@ModelAttribute("pet")
-	public Pet findPet(@PathVariable("ownerId") int ownerId,
+	public Pet updatePet(@PathVariable("ownerId") int ownerId,
 			@PathVariable(name = "petId", required = false) Integer petId) {
 
 		if (petId == null) {
@@ -102,6 +102,10 @@ class PetController {
 	public String initCreationForm(Owner owner, ModelMap model) {
 		Pet pet = new Pet();
 		owner.addPet(pet);
+		System.out.println("Add some new lines");
+		System.out.println("Add some new lines");
+		System.out.println("Add some new lines");
+		System.out.println("Add some new lines");
 		return VIEWS_PETS_CREATE_OR_UPDATE_FORM;
 	}
 
