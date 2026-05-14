@@ -81,6 +81,9 @@ class OwnerControllerTests {
 		dog.setName("dog");
 		max.setType(dog);
 		max.setName("Max");
+		System.out.println("Add some lines");
+		System.out.println("Add some lines");
+		System.out.println("Add some lines");
 		max.setBirthDate(LocalDate.now());
 		george.addPet(max);
 		max.setId(1);
