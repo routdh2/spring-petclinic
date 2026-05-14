@@ -32,6 +32,7 @@ class CrashController {
 
 	@GetMapping("/oups")
 	public String triggerException() {
+		System.out.println("Adding some logs in triggerException method");
 		throw new RuntimeException(
 				"Expected: controller used to showcase what " + "happens when an exception is thrown");
 	}

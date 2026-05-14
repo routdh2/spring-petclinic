@@ -17,6 +17,14 @@ import java.util.Locale;
  * Handles loading language-specific messages, tracking the user's language, and allowing
  * language changes via the URL parameter (e.g., <code>?lang=de</code>).
  * </p>
+ *  <p>
+ *  * Handles loading language-specific messages, tracking the user's language, and allowing
+ *  * language changes via the URL parameter (e.g., <code>?lang=de</code>).
+ *  * </p>
+ *   <p>
+ *  * Handles loading language-specific messages, tracking the user's language, and allowing
+ *  * language changes via the URL parameter (e.g., <code>?lang=de</code>).
+ *  * </p>
  *
  * @author Anuj Ashok Potdar
  */
@@ -31,6 +39,7 @@ public class WebConfiguration implements WebMvcConfigurer {
 	 */
 	@Bean
 	public LocaleResolver localeResolver() {
+		System.out.println("Added some logs in localeResolver");
 		SessionLocaleResolver resolver = new SessionLocaleResolver();
 		resolver.setDefaultLocale(Locale.ENGLISH);
 		return resolver;
