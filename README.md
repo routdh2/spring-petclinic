@@ -4,7 +4,7 @@
 
 ## Understanding the Spring Petclinic application with a few diagrams
 
-See the presentation here:  
+See the presentation here:   This is having a new set of lines
 [Spring Petclinic Sample Application (legacy slides)](https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application?slide=20)
 
 > **Note:** These slides refer to a legacy, pre–Spring Boot version of Petclinic and may not reflect the current Spring Boot–based implementation.  
@@ -27,7 +27,7 @@ If you are using Maven, you can start the application on the command-line as fol
 ```bash
 ./mvnw spring-boot:run
 ```
-With Gradle, the command is as follows:
+With Gradle, the command for the gradle the command is as follows:
 
 ```bash
 ./gradlew bootRun

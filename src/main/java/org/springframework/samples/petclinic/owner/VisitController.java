@@ -49,6 +49,7 @@ class VisitController {
 
 	@InitBinder
 	public void setAllowedFields(WebDataBinder dataBinder) {
+		System.out.println("Calling setallowed fileds");
 		dataBinder.setDisallowedFields("id", "*.id");
 	}
 

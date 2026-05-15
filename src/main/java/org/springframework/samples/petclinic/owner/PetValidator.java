@@ -39,11 +39,13 @@ public class PetValidator implements Validator {
 		String name = pet.getName();
 		// name validation
 		if (!StringUtils.hasText(name)) {
+			System.out.println("Validating name");
 			errors.rejectValue("name", REQUIRED, REQUIRED);
 		}
 
 		// type validation
 		if (pet.isNew() && pet.getType() == null) {
+			System.out.println("Validating name");
 			errors.rejectValue("type", REQUIRED, REQUIRED);
 		}
 
@@ -58,6 +60,7 @@ public class PetValidator implements Validator {
 	 */
 	@Override
 	public boolean supports(Class<?> clazz) {
+		System.out.println("Validating name");
 		return Pet.class.isAssignableFrom(clazz);
 	}
 
